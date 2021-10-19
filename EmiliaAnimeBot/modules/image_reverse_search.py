@@ -183,7 +183,10 @@ __help__ = ""
 __mod_name__ = "Image Search"
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
-    "reverse", reverse, pass_args=True, admin_ok=True,
+    "reverse", reverse, pass_args=True, admin_ok=True
+)
+
+REVERSE_HANDLER = DisableAbleCommandHandler(
     "cheat", reverse, pass_args=True, admin_ok=True
 )
 
