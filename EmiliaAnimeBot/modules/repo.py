@@ -7,20 +7,11 @@ from telegram.ext.dispatcher import  run_async
 GIT_PIC = "https://telegra.ph/file/311df2003dc985a39ddf6.jpg"
 
 GIT_TEXT = """
-EmiliaAnimeRobot By @TheSidharthaRao
+Hinata Shōyō Robot By @INTERVIER_RRRR
 
 *Contributors/Credits*
 
 > [IzumiCypherX](https://github.com/IzumiCypherX)
-> [Nautilus](https://github.com/sudo-nautilus)
-> [Kaneki](https://github.com/KanekiKen44)
-> [Paul-Larsen](https://github.com/PaulSonofLars)
-> [TheHamkerCat](https://github.com/TheHamkerCat)
-
-
-[Repository](https://github.com/IzumiCypherX/EmiliaAnimeBot)
-[Support](https://telegram.dog/TangentChats)
-[Docs](https://telegra.ph/file/dc836cb6f93a6e91dfa68.jpg)
 
 """
 
