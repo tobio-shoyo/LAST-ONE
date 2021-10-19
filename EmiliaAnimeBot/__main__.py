@@ -63,30 +63,29 @@ You can either use /help or the Commands Button Given Below To get a list of my 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🏹Summon ME🏹",url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text="🔰Summon ME🔰",url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
     [
         InlineKeyboardButton(
-          text="Commands", callback_data="help_back"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-          text="📮 Updates", url="https://t.me/TangentXOfficial"
-        ),
-    ],
-         
-    [
-       InlineKeyboardButton(
+          text="📮 Updates", url="https://t.me/CLIPPED_CROW"
+        ),InlineKeyboardButton(
            text="🐱 Support", url=f"https://t.me/{SUPPORT_CHAT}"
          ),
     ],
     [
         InlineKeyboardButton(
-          text="✒ Source", url="https://github.com/IzumiCypherX/EmiliaAnimeBot" # If you have a bit of dignity left in you, Do NOT Remove this Button
+          text="WALLPAPER", url="https://t.me/ani_pix"
+        ),InlineKeyboardButton(
+           text="GROUP", url=f"https://t.me/shhhilence"
+         ),
+    ],
+         
+    
+  [
+        InlineKeyboardButton(
+          text="❕HELP❕", callback_data="help_back"
         ),
-     
     ],
 ]
 
@@ -215,9 +214,6 @@ def start(update: Update, context: CallbackContext):
                   [
                   InlineKeyboardButton(text="Help", url=f"https://t.me/{BOT_USERNAME}?start=help")
                   ],
-                  [
-                  InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ", url="https://github.com/IzumiCypherX/EmiliaAnimeBot")
-                  ]
                 ]
             ),
         )
