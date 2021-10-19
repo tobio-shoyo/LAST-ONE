@@ -188,9 +188,7 @@ REVERSE_HANDLER = DisableAbleCommandHandler(
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
     "cheat", reverse, pass_args=True, admin_ok=True
-), (
-    "reverse", reverse, pass_args=True, admin_ok=True
-)
+), 
 
 
 
