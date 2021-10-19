@@ -5,6 +5,7 @@ from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors import UserNotParticipantError
+from telegram.ext.dispatcher import run_async
 
 @run_async
 @user_admin(events.NewMessage(pattern="^/mentionall ?(.*)"))
