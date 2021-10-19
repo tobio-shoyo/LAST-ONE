@@ -6,7 +6,8 @@ from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors import UserNotParticipantError
 
-@client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
+@run_async
+@user_admin(events.NewMessage(pattern="^/mentionall ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
@@ -69,7 +70,8 @@ async def mentionall(event):
   except:
     pass
 
-@client.on(events.NewMessage(pattern="^/cancel$"))
+@run_async
+@user_admin(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
     return await event.respond('__There is no proccess on going...__')
